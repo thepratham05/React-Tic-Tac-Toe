@@ -92,6 +92,7 @@ const TicTacToe = () => {
   return (
     <div className='container'>
         <h1 className='title' ref={titleRef}>Tic-Tac-Toe Game In <span>React</span></h1>
+        <h5 className='credits'>Made by Pratham</h5>
         <div className='board'>
           <div className="row1">
             <div className="boxes" ref={box1} onClick={(e)=>{toggle(e,0)}}></div>
@@ -110,7 +111,6 @@ const TicTacToe = () => {
           </div>
         </div>
         <button className='reset' onClick={()=>{reset()}}>Play Again?</button>
-        <h5 className='credits'>Made by Pratham</h5>
     </div>
   )
 }
